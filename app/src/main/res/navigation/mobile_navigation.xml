@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_board">
+
+    <fragment
+        android:id="@+id/navigation_board"
+        android:name="com.example.ezcoinobserver.fragment.BoardFragment"
+        tools:layout="@layout/fragment_board_bpi">
+        <action
+            android:id="@+id/navigateToHistory"
+            app:popUpTo="@id/navigation_history"
+            app:destination="@id/navigation_history"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.ezcoinobserver.fragment.HistoryFragment"
+        tools:layout="@layout/fragment_history_price">
+        <action
+            android:id="@+id/navigateToBoard"
+            app:popUpTo="@id/navigation_board"
+            app:destination="@id/navigation_board"/>
+    </fragment>
+</navigation>
