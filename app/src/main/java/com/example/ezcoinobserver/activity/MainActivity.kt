@@ -21,6 +21,7 @@ import kotlinx.coroutines.launch
 import org.greenrobot.eventbus.EventBus
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.context.KoinContextHandler
 import org.koin.core.context.startKoin
 import java.util.*
 import kotlin.coroutines.CoroutineContext
@@ -104,6 +105,10 @@ class MainActivity : AppCompatActivity(),CoroutineScope {
         currencyViewModel.getCoinPrice()
     }
 
+    override fun onDestroy() {
+        KoinContextHandler.stop()
+        super.onDestroy()
+    }
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.Main
 
