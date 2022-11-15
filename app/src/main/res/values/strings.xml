@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EZCoinObserver</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="txt_bitcoin_speculator_tab">Bitcoin price</string>
+    <string name="txt_history_tab">History</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="text_currency_pair">BTC/%s</string>
+    <string name="text_board_fragment">BoardFragment</string>
+    <string name="text_history_fragment">HistoryFragment</string>
+
+
+    <string name="text_currency_usd">USD</string>
+    <string name="text_currency_gbp">GBP</string>
+    <string name="text_currency_eur">EUR</string>
+    <string name="text_currency_btc">BTC</string>
+    <string name="text_approximate_sign">≈</string>
+
+</resources>
